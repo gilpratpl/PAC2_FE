@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.js"],"names":["name","console","log"],"mappings":";AAAA,IAAMA,EAAO,QACbC,QAAQC,IAAaF,SAAAA,OAAAA","file":"first-project.19592dd2.js","sourceRoot":"..","sourcesContent":["const name = 'world';\r\nconsole.log(`Hello ${name}`);"]}
