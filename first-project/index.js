@@ -16,7 +16,7 @@ function setLikeItemStorage(id){
     localStorage.setItem('selectedBooks', JSON.stringify(booksIds));
 }
 
-//Get data from localstorage and populate
+// Get data from localstorage and populate
 function populateUI(){
    
     const selectedBooks = JSON.parse(localStorage.getItem('selectedBooks'));

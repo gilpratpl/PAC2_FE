@@ -1,3 +1,4 @@
+
 html {
     background: rgb(40,84,59);
     background: linear-gradient(0deg, rgba(40,84,59,1) 22%, rgba(51,35,64,1) 73%); 
@@ -27,10 +28,6 @@ header > * {
      margin: 10px;
 }
 
-header a {
-    order: 2;
-}
-
 header > a {
     background-color: #FF5037;
     color: white;
@@ -45,7 +42,7 @@ header > a:hover {
 }
 
 /*main*/
-main {
+article {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 0;
@@ -97,13 +94,12 @@ footer::after {
     display: table;
 }
 
-#home{
+#background-img{
     background-image: url("../img/home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
     opacity: 0.2;
-    padding: 20px;
     position: fixed;
     z-index: -1;
     top: 0;
@@ -112,9 +108,6 @@ footer::after {
     right: 0;
 }
 /*titles*/
-h1 {
-    order: 1;
-}
 
 h1 i {
     font-weight: lighter;
@@ -122,18 +115,19 @@ h1 i {
 
 h1 a {
     font-family: 'Merriweather', serif;
-    background-image: url("../img/patronus.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-left: 100px;
     display: block;
     line-height: calc(4.9rem + 0.6vw);
-    font-size: 2.8rem;
+    font-size: calc(1.8rem + 0.2vw);
+    font-size:2.5rem;
+    color: rgb(17, 15, 15);
     height: 90px;
 }
 
-header h1 a:hover, header ul li a:hover {
+header h1 a:hover {
     opacity: 0.5;
+}
+header ul li a:hover{
+    color: #FF5037;
 }
 
 article h2 {
@@ -158,8 +152,6 @@ h3 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-
 
 .hpotter h3, .detall h3 {
     font-weight: bold;
@@ -228,7 +220,6 @@ nav li a {
 }
 
 nav {
-    order: 0;
     flex-basis: 100%;
     text-align: center;
 }
@@ -244,13 +235,6 @@ nav li a {
     max-height: 400px;
     align-self: flex-start;
     justify-self: center;
-}
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
 }
 
 .grid-index {
@@ -302,9 +286,6 @@ figure i{
     font-size:30px !important;
     z-index: 1000;
 }
-i:hover{
-    color:pink;
-}
 
 .ic-active{
     color:red;
@@ -333,11 +314,13 @@ a {
     color: #ffff;
 }
 
-main a {
+article a, main a {
     color: #FF5037;
 }
-
-main a:hover {
+.breadcrumb a:hover{
+    color: #FF5037;
+}
+article a:hover {
     opacity: 0.5;
 }
 
@@ -352,7 +335,6 @@ footer a {
     padding: 10px;
     display: block;
 }
-
 
 
 /*llistes*/
@@ -417,6 +399,7 @@ ul li a {
     float: left;
     border-radius: 50%;
     margin-right: 15px;
+    max-height: 200px;
 }
 
 .border-bottom {
@@ -524,9 +507,21 @@ figure {
 .breadcrumb {
     text-align: center;
     margin-bottom: 40px;
+    margin-top:15px;
 }
 
 @media (min-width: 768px) {
+    h1 a {
+        font-family: 'Merriweather', serif;
+        background-image: url("../img/patronus.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-left: 100px;
+        display: block;
+        line-height: calc(4.9rem + 0.6vw);
+        font-size: calc(1.8rem + 0.2vw);
+        height: 90px;
+    }
     .detall div {
         display: grid;
         grid-template-columns: 2fr 3fr;
@@ -547,6 +542,9 @@ figure {
         justify-content: start;
     }
 
+    .grid-hpotter-images img{
+        max-height:400px;
+    }
     .grid-hpotter {
         grid-template-columns: 1fr 2fr;
     }
@@ -618,18 +616,6 @@ figure {
         flex-direction: row;
     }
 
-    header a {
-         order: 2;
-    }
-
-    nav {
-        order: 1;
-    }
-
-    h1 {
-        order: 0;
-    }
-
     .grid-index {
         grid-template-columns: 1fr 1fr;
     }
@@ -658,7 +644,7 @@ figure {
         margin-bottom: 20px;
     }
 
-    main {
+     article, .breadcrumb {
         padding-left: 13%;
         padding-right: 13%;
     }
