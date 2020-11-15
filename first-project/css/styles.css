@@ -1,7 +1,7 @@
 
 html {
     background: rgb(40,84,59);
-    background: linear-gradient(0deg, rgba(40,84,59,1) 22%, rgba(51,35,64,1) 73%); 
+    background: linear-gradient(to top, rgba(40,84,59,1) 22%, rgba(51,35,64,1) 73%); 
     color: #ffff;
     font-size: 0.95rem;
     font-family: 'Merriweather', serif;
@@ -46,6 +46,9 @@ article {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 0;
+}
+.index a{
+display: block;
 }
 /*footer*/
 footer p {
