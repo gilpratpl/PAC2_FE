@@ -405,6 +405,13 @@ ul li a {
     max-height: 200px;
 }
 
+.float-right {
+    margin-right: 10px;
+    float: right;
+    margin-right: 15px;
+    max-height: 200px;
+}
+
 .border-bottom {
     border-bottom: 1px solid #020F14;
 }
@@ -514,12 +521,9 @@ figure {
 }
 
 @media (min-width: 768px) {
+ 
     h1 a {
         font-family: 'Merriweather', serif;
-        background-image: url("../img/patronus.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        padding-left: 100px;
         display: block;
         line-height: calc(4.9rem + 0.6vw);
         font-size: calc(1.8rem + 0.2vw);
@@ -573,11 +577,12 @@ figure {
         text-align: right;
     }
 
-    footer > div {
+    footer > div:not(:last-child) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: space-between;
         grid-gap: 30px;
+        padding:0;
     }
 
     footer > div > p a + a:before {
@@ -651,4 +656,92 @@ figure {
         padding-left: 13%;
         padding-right: 13%;
     }
+
+
+
+}
+
+
+    
+#clipped {
+    clip-path:polygon(61% 22%, 53% 46%, 62% 46%, 39% 83%, 50% 53%, 42% 53%, 47% 22%);
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+       transition:         transform .8s ease-in-out;
+   }
+
+   #clipped:hover {
+     -webkit-transform: rotate(360deg);
+       transform: rotate(360deg);
+    }
+   .animation1:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+     transform: scale(1.1);
+     transition: 0.2s ease-in-out;
+   }
+
+  
+   @keyframes heartbeat
+     {
+     0%
+     {
+         transform: scale( .75 );
+     }
+     20%
+     {
+         transform: scale( 1 );
+     }
+     40%
+     {
+         transform: scale( .75 );
+     }
+     60%
+     {
+         transform: scale( 1 );
+     }
+     80%
+     {
+         transform: scale( .75 );
+     }
+     100%
+     {
+         transform: scale( .75 );
+     }
+     }
+
+.fa-heart:hover{
+color: pink;
+animation: heartbeat 1s infinite;
+}
+.patronus {
+    font-family: 'Merriweather', serif;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: calc(4.9rem + 0.6vw);
+    font-size: calc(1.8rem + 0.2vw);
+    height: 150px;
+}
+
+picture img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.centered{
+    text-align:center;
+}
+
+.footerImage a{
+    font-family: 'Merriweather', serif;
+    display: block;
+    line-height: calc(4.9rem + 0.6vw);
+    font-size: calc(1.8rem + 0.2vw);
+}
+
+.footerImage{
+    padding: 0;
 }
