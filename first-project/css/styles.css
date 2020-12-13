@@ -757,19 +757,14 @@ picture img{
 }
 
 header a, footer a{
-  
-    background: linear-gradient(to right, #FF5037, #FF5037 50%, white 50%);
-    background-clip: text;
-    background-size: 200% 100%;
-    background-position: 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: background-position 275ms ease;
-    text-decoration: none; 
+    color: white;
+    overflow: hidden;
+    transition: 0.5s;
   }
 
 header a:hover, footer a:hover{
-  
-      background-position: 0 100%;
-    
+    color:  #FF5037;
   }
+
+
+  
