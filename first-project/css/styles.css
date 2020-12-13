@@ -745,3 +745,11 @@ picture img{
 .footerImage{
     padding: 0;
 }
+
+.imageresposnive1{
+    max-height: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 400px;
+}
