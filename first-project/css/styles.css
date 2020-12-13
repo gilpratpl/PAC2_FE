@@ -750,6 +750,14 @@ picture img{
     margin-right: auto;
     min-height: 400px;
 }
+
+.imageresponsive2{
+    max-height: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 200px;
+}
 .svgStyle{
     max-height: 60px;
     max-width:50px; 
