@@ -656,9 +656,6 @@ figure {
         padding-left: 13%;
         padding-right: 13%;
     }
-
-
-
 }
 
 
@@ -746,7 +743,7 @@ picture img{
     padding: 0;
 }
 
-.imageresposnive1{
+.imageresponsive{
     max-height: 800px;
     display: block;
     margin-left: auto;
@@ -758,3 +755,21 @@ picture img{
     max-width:50px; 
     overflow: visible;
 }
+
+header a, footer a{
+  
+    background: linear-gradient(to right, #FF5037, #FF5037 50%, white 50%);
+    background-clip: text;
+    background-size: 200% 100%;
+    background-position: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 275ms ease;
+    text-decoration: none; 
+  }
+
+header a:hover, footer a:hover{
+  
+      background-position: 0 100%;
+    
+  }
