@@ -9,6 +9,7 @@ footer p {
 footer {
     font-family: 'Montserrat', sans-serif;
     color: white;
+    font-display: swap;
     box-sizing: border-box;
     font-size: 1rem;
     background-color: #433A44;
@@ -67,6 +68,7 @@ h1 i {
 
 h1 a {
     font-family: 'Merriweather', serif;
+    font-display: swap;
     display: block;
     line-height: calc(4.9rem + 0.6vw);
     font-size: calc(1.8rem + 0.2vw);
@@ -293,6 +295,7 @@ footer a {
 li {
     list-style: none;
     font-family: 'Montserrat', sans-serif;
+    font-display: swap;
 }
 
 ul {
@@ -473,6 +476,7 @@ figure {
  
     h1 a {
         font-family: 'Merriweather', serif;
+        font-display: swap;
         display: block;
         line-height: calc(4.9rem + 0.6vw);
         font-size: calc(1.8rem + 0.2vw);
@@ -663,6 +667,7 @@ animation: heartbeat 1s infinite;
 }
 .patronus {
     font-family: 'Merriweather', serif;
+    font-display: swap;
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
@@ -684,6 +689,7 @@ picture img{
 .footerImage a{
     font-family: 'Merriweather', serif;
     display: block;
+    font-display: swap;
     line-height: calc(4.9rem + 0.6vw);
     font-size: calc(1.8rem + 0.2vw);
 }
