@@ -569,8 +569,8 @@ figure {
 
 @media (min-width: 1200px) {
     header {
-        justify-content: space-between;
-        flex-direction: row;
+        justify-content: space-between !important;
+        flex-direction: row !important;
     }
 
     .grid-index {
@@ -707,7 +707,6 @@ picture img{
     margin-right: auto;
     min-height: 200px;
 }
-
 
 header a:hover, footer a:hover{
     color:  #FF5037;

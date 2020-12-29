@@ -6,9 +6,74 @@
     <meta name="author" content="Gil Prat">
     <meta name="description" content="PAC 1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;1,700&display=swap" rel="stylesheet"  media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/styles.css"  media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  media="print" onload="this.media='all'">
+    <style>
+       
+        html {
+            background: rgb(40,84,59);
+            background: linear-gradient(to top, rgba(40,84,59,1) 22%, rgba(51,35,64,1) 73%); 
+            color: #ffff;
+            font-size: 0.95rem;
+            font-family: 'Merriweather', serif;
+        }
+        
+        body {
+            font-size: calc(1rem + 0.2vw);
+            margin: 0;
+        }
+        /*header*/
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+            color: #ffff;
+            font-family: 'Montserrat', sans-serif;
+            flex-direction: column-reverse;
+            border-bottom: 1px solid white;
+        }
+        
+        header > * {
+             margin: 10px;
+        }
+        
+        header > a {
+            background-color: #FF5037;
+            color: white;
+            padding: 7px 15px 7px 15px;
+            border-radius: 4px;
+            border: none;
+            width: initial;
+        }
+        
+        header > a:hover {
+            background-color: #020F14;
+        }
+        
+        /*main*/
+        article {
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 0;
+        }
+        .index a{
+        display: block;
+        }
+        .svgStyle{
+            max-height: 60px;
+            max-width:50px; 
+            overflow: visible;
+        }
+        
+        header a, footer a{
+            color: white;
+            overflow: hidden;
+            transition: 0.5s;
+          }
+              </style>
 <body>
     <header id="header">
         <h1>
