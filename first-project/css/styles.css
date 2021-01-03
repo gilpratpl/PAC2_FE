@@ -46,7 +46,9 @@ footer::after {
     clear: both;
     display: table;
 }
-
+article {
+    padding: 20px;
+}
 #background-img{
     background-image: url("../img/home.jpg");
     background-repeat: no-repeat;
@@ -72,7 +74,6 @@ h1 a {
     display: block;
     line-height: calc(4.9rem + 0.6vw);
     font-size: calc(1.8rem + 0.2vw);
-    font-size:2.5rem;
     color: rgb(17, 15, 15);
     height: 90px;
 }
